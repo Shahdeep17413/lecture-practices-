@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>types of input tags</title>
+</head>
+<style>
+    body {
+        background-color: rgb(230, 240, 240);
+        font-size: 20px;
+    }
+
+    .box1 {
+        width: 500px;
+        height: 600px;
+    }
+</style>
+
+<body>
+    <table class="box1">
+        <form action="" method="get">
+            <tr>
+                <td>
+                    <label for="">First Name:-</label>
+                </td>
+
+                <td>
+                    <input type="text" pattern="[a-zA-Z]+" placeholder="Mention Name" value="" name="Name" required>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                    <label for="">Middle Name:-</label>
+                </td>
+
+                <td>
+                    <input type="text" pattern="[a-zA-Z]+" placeholder="Mention Name" value="" name="Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Last Name:-</label>
+                </td>
+
+                <td>
+                    <input type="text" pattern="[a-zA-Z]+" placeholder="Mention Name" value="" name="Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <select name="" id="">
+                        <option value="">--Select Country--</option>
+                        <option value="">Dubai</option>
+                        <option value="">Thailand</option>
+                        <option value="">Vietnam</option>
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">Hong Kong</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    <label for="">E-mail:-</label>
+                </td>
+
+                <td>
+
+                    <input type="text" pattern="[a-zA-Z0-9]+'@'+[a-zA-Z]+'.'+[a-zA-Z]{2,3}+" placeholder="E-mail" value=""
+                        name="E-mail" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Contact number:-</label>
+                </td>
+
+                <td>
+                    <input type="text" pattern="[0-9]{10}" placeholder="Number" value="" name="Number" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Plan Date:-</label>
+                </td>
+
+                <td>
+                    <input type="datetime-local" placeholder="datetime-local" value="" name="Date&Time">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Gender:-</label>
+                </td>
+
+                <td>
+                    Male
+                    <input type="radio" value="" name="Gender">
+                    Female
+                    <input type="radio" value="" name="Gender">
+                    Other
+                    <input type="radio" value="" name="Gender">
+
+                </td>
+
+            <tr>
+                <!-- <td><label for="">Destiantion</label></td>
+   <td> Dubai<input type="checkbox" name="" id="">
+    Bali<input type="checkbox" name="" id="">
+    Thailand<input type="checkbox" name="" id="">
+    Other<input type="checkbox" name="" id=""></td>
+</tr> -->
+            <tr>
+                <td><label for="">Total Pax:-</label></td>
+                <td><input type="number" min="1" max="40"></td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td><input type="text" placeholder="Enter your Address" style="height: 100px; width: 200px;"></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+
+
+
+
+
+
+        </form>
+    </table>
+</body>
+
+</html>
