@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            color: aqua;
+            background-color: brown;
+        }
+        ul li:nth-child(3)
+        {
+            background-color: lightcoral;
+        }
+        ul li:nth-child(odd)
+        {
+            background-color: lightcoral;
+        }
+        ul li:nth-child(even)
+        {
+            background-color: rgb(136, 214, 11);
+        }
+        ul li:nth-last-child(1)
+        { 
+            background-color: blue;
+        }
+
+        .main{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+        .main:hover{
+            background-color: red;
+            border-radius: 50%;   
+        }
+        input{
+            border: none;
+            outline: none;
+        }
+        input:focus{
+            background-color: rgb(221, 45, 45);
+            color: lawngreen;
+            border: 5px solid lightgreen;
+            transform: scale(2);
+            transition: 1s;
+        }
+        .input:hover{
+            transform: scale(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- : pesudo class -->
+    
+    <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>Seven</li>
+        <li>Eight</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <input type="text" placeholder="deep">
+    
+</body>
+</html>

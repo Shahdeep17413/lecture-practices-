@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 800px;
+            /* border: 2px solid red; */
+            overflow: hidden;
+        }
+
+        .child{
+            height: 600px;
+            width: 810px;
+            border: 2px solid black;
+            background: url(../images/cloth.jpg);
+            background-size: 100% 100%;
+            transition: 0.5s;
+        }
+
+        .main:hover .child{
+            transform:translateX(-20px);
+            
+
+        }
+
+        .border{
+            height: 300px;
+            width:400px ;
+            border: 5px solid rgb(250, 243, 243);
+            margin: 100px auto;
+            transform: translateX(-800px);
+            transition: 0.5s;
+            text-align: right;
+        }
+
+        .main:hover .border{
+            transform:translateX(100px);
+            opacity: 1;
+        }
+
+        span{
+            color: rgb(255, 253, 253);
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 10px;
+            
+            
+        }
+
+      .tag{
+        margin-left: 500px;
+      }
+
+      
+      
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <span class="tag">FALL AHEAD</span>
+            <div class="border">
+                <span>New Arrival</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
